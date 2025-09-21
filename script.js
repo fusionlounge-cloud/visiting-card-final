@@ -1,3 +1,5 @@
-function openLink(url) {
-  window.open(url, "_blank");
-}
+document.querySelectorAll('.icon').forEach(icon => {
+  icon.addEventListener('click', () => {
+    alert('Opening: ' + icon.href);
+  });
+});

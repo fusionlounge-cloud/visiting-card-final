@@ -1,7 +1,7 @@
 # AI Visiting Card - Ananth Narayan
 
 ## How to use
-1. Place your `intro.mp4` video file in the root folder (same level as index.html).
-2. Upload all files to your GitHub repo.
-3. Deploy/redeploy on Vercel.
-4. Scan QR → glowing bulb text + circular floating AR buttons + autoplay video background.
+1. Replace **intro.mp4** with your actual video.
+2. Upload all files to GitHub repository.
+3. Deploy on Vercel.
+4. Scan QR -> autoplay video background + glowing 3D name + floating AR-style icons.
