@@ -7,55 +7,78 @@
   <style>
     body {
       margin: 0;
-      background: #000;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
       overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: gold;
+      text-align: center;
     }
     video {
+      position: fixed;
+      top: 0; left: 0;
       width: 100vw;
       height: 100vh;
       object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
       z-index: -1;
     }
     .overlay {
       position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0;
+      bottom: 30px;
+      width: 100%;
       text-align: center;
     }
     .overlay h2 {
       margin: 0;
-      font-size: 24px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #FFD700;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFAA00, 0 0 40px #FF8800;
+      letter-spacing: 3px;
     }
-    .links a {
+    .overlay p {
+      margin: 8px 0 20px;
+      font-size: 16px;
+      color: #ffdd88;
+      text-shadow: 0 0 6px #FFAA00, 0 0 12px #FF6600;
+    }
+    .popup {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      animation: float 3s ease-in-out infinite;
+    }
+    .popup a {
       display: inline-block;
-      margin: 5px 10px;
-      padding: 10px 15px;
-      background: #ff4081;
-      color: white;
+      padding: 18px;
+      border-radius: 50%;
+      background: rgba(255, 200, 0, 0.85);
+      color: black;
+      font-size: 22px;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 14px;
+      box-shadow: 0 0 15px #FFD700, 0 0 35px #FFAA00;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .popup a:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 25px #FFD700, 0 0 50px #FF8800;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
     }
   </style>
 </head>
 <body>
   <video src="intro.mp4" autoplay muted loop playsinline></video>
   <div class="overlay">
-    <h2>Ananth Narayan</h2>
-    <p>Founder · JustBlr Matrix | AI · Robotics · Automation</p>
-    <div class="links">
-      <a href="tel:+919845609400">📞 Call</a>
-      <a href="mailto:fusionlounge@gmail.com">✉️ Email</a>
-      <a href="https://www.instagram.com/justblrmatrix" target="_blank">📸 Instagram</a>
-      <a href="https://www.linkedin.com/in/ananthnarayan007/" target="_blank">💼 LinkedIn</a>
-      <a href="https://justblrmatrix.com" target="_blank">🌐 Website</a>
+    <h2>ANANTH NARAYAN</h2>
+    <p>MD & FOUNDER · +91 98456 09400 (WSPP PREFERRED)</p>
+    <div class="popup">
+      <a href="tel:+919845609400">📞</a>
+      <a href="mailto:fusionlounge@gmail.com">✉️</a>
+      <a href="https://www.instagram.com/justblrmatrix" target="_blank">📸</a>
+      <a href="https://www.linkedin.com/in/ananthnarayan007/" target="_blank">💼</a>
+      <a href="https://justblrmatrix.com" target="_blank">🌐</a>
     </div>
   </div>
 </body>
