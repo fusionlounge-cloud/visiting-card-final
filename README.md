@@ -1,10 +1,7 @@
-# AI Visiting Card - Final Build
+# AI Visiting Card - Ananth Narayan
 
-## How to Deploy
-1. Go to [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com).
-2. Upload this project folder as a new site.
-3. The video is already in `public/media/intro.mp4`.
-4. After deploy, test your video at: https://<your-domain>/media/intro.mp4
-5. Your visiting card microsite will autoplay this video with 3D AR pop-ups + QR.
-
-Enjoy 🚀
+## How to use
+1. Place your `intro.mp4` video file in the root folder (same level as index.html).
+2. Upload all files to your GitHub repo.
+3. Deploy/redeploy on Vercel.
+4. Done! Your AI Visiting Card will be live with video background + AR buttons.

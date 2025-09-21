@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const startScreen = document.getElementById("start-screen");
-  const mainScreen = document.getElementById("main-screen");
-
-  startScreen.addEventListener("click", () => {
-    startScreen.classList.add("hidden");
-    mainScreen.classList.remove("hidden");
+// Add subtle parallax for AR feel
+document.addEventListener("mousemove", (e) => {
+  const buttons = document.querySelectorAll(".btn");
+  buttons.forEach((btn) => {
+    const speed = 20;
+    const x = (window.innerWidth / 2 - e.pageX) / speed;
+    const y = (window.innerHeight / 2 - e.pageY) / speed;
+    btn.style.transform = `translate(${x}px, ${y}px)`;
   });
 });
