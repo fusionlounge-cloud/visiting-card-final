@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Visiting Card - Ananth Narayan</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ananth Narayan | AI Visiting Card</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="color-scheme" content="dark" />
 </head>
 <body>
-  <video id="bg-video" src="intro.mp4" autoplay muted loop playsinline></video>
-  <div class="overlay">
-    <h1 class="name">ANANTH NARAYAN</h1>
-    <div class="orbit">
-      <a href="tel:+919845609400" class="btn">📞</a>
-      <a href="https://wa.me/919845609400" target="_blank" class="btn">💬</a>
-      <a href="mailto:fusionlounge@gmail.com" class="btn">✉️</a>
-      <a href="https://www.instagram.com/justblrmatrix" target="_blank" class="btn">📸</a>
-      <a href="https://www.linkedin.com/in/ananthnarayan007/" target="_blank" class="btn">💼</a>
-      <a href="https://justblrmatrix.com" target="_blank" class="btn">🌐</a>
-    </div>
-  </div>
+  <!-- Background video (you will add intro.mp4 to the same folder) -->
+  <video id="bg" src="intro.mp4" autoplay muted playsinline loop></video>
+  <div class="vignette"></div>
+
+  <main class="stage">
+    <h1 class="bulb-title">ANANTH&nbsp;NARAYAN</h1>
+    <p class="subtitle">MD & FOUNDER · JustBlr Matrix</p>
+
+    <ul class="orbit" role="list">
+      <li><a class="btn call"      href="tel:+919845609400"            aria-label="Call"></a></li>
+      <li><a class="btn wa"        href="https://wa.me/919845609400"   target="_blank" aria-label="WhatsApp Me" data-tip="WhatsApp Me"></a></li>
+      <li><a class="btn mail"      href="mailto:fusionlounge@gmail.com" aria-label="Email"></a></li>
+      <li><a class="btn insta"     href="https://www.instagram.com/justblrmatrix" target="_blank" aria-label="Instagram"></a></li>
+      <li><a class="btn linkedin"  href="https://www.linkedin.com/in/ananthnarayan007/" target="_blank" aria-label="LinkedIn"></a></li>
+      <li><a class="btn web"       href="https://justblrmatrix.com"    target="_blank" aria-label="Website"></a></li>
+    </ul>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
