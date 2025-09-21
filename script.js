@@ -1,8 +1,8 @@
-// Ensure video keeps playing on iOS after first tap
+// Keep video playing on iOS after first tap
 const bg = document.getElementById('bg');
 document.addEventListener('touchstart', () => { if (bg && bg.paused) bg.play(); }, { once:true });
 
-// Subtle parallax for orbit to feel AR-like
+// Subtle AR parallax
 document.addEventListener('mousemove', (e) => {
   const orbit = document.querySelector('.orbit');
   if(!orbit) return;

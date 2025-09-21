@@ -4,25 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ananth Narayan | AI Visiting Card</title>
-  <link rel="stylesheet" href="style.css" />
   <meta name="color-scheme" content="dark" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background video (you will add intro.mp4 to the same folder) -->
-  <video id="bg" src="intro.mp4" autoplay muted playsinline loop></video>
+  <!-- Background video (add intro.mp4 in the same folder) -->
+  <video id="bg" autoplay muted playsinline loop>
+    <source src="intro.mp4" type="video/mp4" />
+  </video>
+  <div class="bg-fallback"></div>
   <div class="vignette"></div>
 
   <main class="stage">
-    <h1 class="bulb-title">ANANTH&nbsp;NARAYAN</h1>
-    <p class="subtitle">MD & FOUNDER · JustBlr Matrix</p>
+    <h1 class="bulb">ANANTH&nbsp;NARAYAN</h1>
+    <p class="sub">MD & FOUNDER · JustBlr Matrix</p>
 
+    <!-- Circular orbit of buttons -->
     <ul class="orbit" role="list">
-      <li><a class="btn call"      href="tel:+919845609400"            aria-label="Call"></a></li>
-      <li><a class="btn wa"        href="https://wa.me/919845609400"   target="_blank" aria-label="WhatsApp Me" data-tip="WhatsApp Me"></a></li>
-      <li><a class="btn mail"      href="mailto:fusionlounge@gmail.com" aria-label="Email"></a></li>
-      <li><a class="btn insta"     href="https://www.instagram.com/justblrmatrix" target="_blank" aria-label="Instagram"></a></li>
-      <li><a class="btn linkedin"  href="https://www.linkedin.com/in/ananthnarayan007/" target="_blank" aria-label="LinkedIn"></a></li>
-      <li><a class="btn web"       href="https://justblrmatrix.com"    target="_blank" aria-label="Website"></a></li>
+      <li><a class="btn" href="tel:+919845609400"            aria-label="Call">📞</a></li>
+      <li><a class="btn" href="https://wa.me/919845609400"   target="_blank" aria-label="WhatsApp">💬</a></li>
+      <li><a class="btn" href="mailto:fusionlounge@gmail.com" aria-label="Email">✉️</a></li>
+      <li><a class="btn" href="https://www.instagram.com/justblrmatrix" target="_blank" aria-label="Instagram">📸</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/ananthnarayan007/" target="_blank" aria-label="LinkedIn">💼</a></li>
+      <li><a class="btn" href="https://justblrmatrix.com"    target="_blank" aria-label="Website">🌐</a></li>
     </ul>
   </main>
 
