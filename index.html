@@ -3,31 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ananth Narayan | AI Visiting Card</title>
+  <title>ANANTH NARAYAN - Visiting Card</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Background video -->
-  <video autoplay muted loop playsinline id="bg-video">
+  <video autoplay muted loop id="bg-video">
     <source src="intro.mp4" type="video/mp4">
+    Your browser does not support video.
   </video>
 
-  <!-- Overlay photo -->
-  <div class="overlay-photo">
-    <img src="photo.png" alt="Ananth Narayan">
-  </div>
+  <div class="content">
+    <h1 class="glow-text">ANANTH NARAYAN</h1>
+    <h2>MD & FOUNDER · JustBlr Matrix</h2>
 
-  <!-- Text + Buttons -->
-  <div class="card">
-    <h1 class="name">ANANTH NARAYAN</h1>
-    <p class="title">MD & FOUNDER · JustBlr Matrix</p>
-
-    <div class="buttons">
-      <a href="https://wa.me/919845609400" target="_blank" class="btn">💬</a>
-      <a href="tel:+919845609400" class="btn">📞</a>
-      <a href="mailto:fusionlounge@gmail.com" class="btn">✉️</a>
-      <a href="https://www.linkedin.com/in/ananthnarayan007/" target="_blank" class="btn">💼</a>
-      <a href="https://justblrmatrix.com" target="_blank" class="btn">🌐</a>
+    <div class="icon-container">
+      <div class="icon whatsapp" onclick="openLink('https://wa.me/919845609400')">💬</div>
+      <div class="icon call" onclick="openLink('tel:+919845609400')">📞</div>
+      <div class="icon mail" onclick="openLink('mailto:test@example.com')">✉️</div>
+      <div class="icon insta" onclick="openLink('https://instagram.com')">📸</div>
+      <div class="icon linkedin" onclick="openLink('https://linkedin.com')">💼</div>
+      <div class="icon web" onclick="openLink('https://justblr.com')">🌐</div>
     </div>
   </div>
 

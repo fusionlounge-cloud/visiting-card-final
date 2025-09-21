@@ -1,1 +1,3 @@
-console.log("AI Visiting Card loaded successfully.");
+function openLink(url) {
+  window.open(url, "_blank");
+}
